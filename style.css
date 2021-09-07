@@ -137,13 +137,39 @@ body {
 
     .card-wrapper {
         height: 100vh;
+        
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .product-content {
         padding-top: 0;
+    }
+    .swiper {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .mySwiper img {
+        width: 300px;
+        height: 300px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .mySwiper2 .swiper-slide {
+
+        width: 15%;
+        height: 20%;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -172,9 +198,8 @@ body {
 }
 
  .mySwiper2 {
-     position: relative;
+    position: relative;
     height: 20%;
-    border: 2px solid rgb(0, 195, 255);
     
 }
 .mySwiper2 img{
@@ -193,4 +218,12 @@ body {
 
 .mySwiper2 .swiper-slide-thumb-active {
     opacity: 1;
+}
+.swiper-button-next{
+    position: relative;
+    top: 50%;
+}
+.swiper-button-prev{
+    position: relative;
+    top: 50%;
 }

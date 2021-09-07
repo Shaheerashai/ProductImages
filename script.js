@@ -14,6 +14,10 @@ var swiper = new Swiper(".mySwiper2", {
       shadowOffset: 10,
       shadowScale: 0.94
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     
     thumbs: {
       swiper: swiper,
@@ -22,5 +26,9 @@ var swiper = new Swiper(".mySwiper2", {
       el: ".swiper-pagination"
     },
   });
-window.addEventListener('resize', slideImage);
+ // function setSize(){
+   // width = window.innerWidth;
+    //console.log(width);
+//}
+  //window.addEventListener('resize', setSize, false);
 
