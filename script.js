@@ -1,20 +1,26 @@
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
-
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
-
-function slideImage() {
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-}
-
+var swiper = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    slidesPerView: 7,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 10,
+      shadowScale: 0.94
+    },
+    
+    thumbs: {
+      swiper: swiper,
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    },
+  });
 window.addEventListener('resize', slideImage);
 

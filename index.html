@@ -1,106 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product Card/Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  </head>
-  <body>
-    
-    <div class = "card-wrapper">
-      <div class = "card">
-        <!-- card left -->
-        <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-              <img src = "images/Airphones_01.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_02.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_03.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_04.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_05.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_06.jpg" alt = "Airphones image">
-              <img src = "images/Airphones_07.jpg" alt = "Airphones image">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Product Card/Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style copy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <!-- card left -->
+      <div class="product-imgs">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/Airphones_01.jpg" />
             </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_03.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_04.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_05.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_06.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Airphones_07.jpg" />
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class = "img-select">
-            <div class = "img-item">
-              <a href = "#" data-id = "1">
-                <img src = "images/Airphones_01.jpg" alt = "Airphones image">
-              </a>
+        </div>
+        <br>
+        <div thumbsSlider="" class="swiper mySwiper2">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/Airphones_01.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img src = "images/Airphones_02.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_02.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img src = "images/Airphones_03.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_03.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "4">
-                <img src = "images/Airphones_04.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_04.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "5">
-                <img src = "images/Airphones_05.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_05.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "6">
-                <img src = "images/Airphones_06.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_06.jpg" />
             </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "7">
-                <img src = "images/Airphones_07.jpg" alt = "Airphones image">
-              </a>
+            <div class="swiper-slide">
+              <img src="images/Airphones_07.jpg" />
             </div>
           </div>
         </div>
-        <!-- card right -->
-        <div class = "product-content">
-          <h2 class = "product-title">E7s Airphones</h2>
-          <a href = "#" class = "product-link">visit our page</a>
-          <div class = "product-rating">
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star-half-alt"></i>
-            <span>4.7(21)</span>
-          </div>
+     
+      </div>
+      <!-- card right -->
+      <div class="product-content">
+        <h2 class="product-title">E7s Airphones</h2>
+        <a href="#" class="product-link">visit our page</a>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.7(21)</span>
+        </div>
 
-          <div class = "product-price">
-            <p class = "last-price">Old Price: 
-              <span>Rs 2500
+        <div class="product-price">
+          <p class="last-price">Original Price:
+            <span>Rs 2500
 
-              </span></p>
-            <p class = "new-price">New Price: 
-              <span>Rs 2000 
-              </span></p>
-          </div>
+            </span></p>
+          <p class="new-price">Sale Price:
+            <span>Rs 2000
+            </span></p>
+        </div>
 
-          <div class = "product-detail">
-            <h2>about this item: </h2>
-            <p></p>
-            <p></p>
-            <ul>
+        <div class="product-detail">
+          <h2>about this item: </h2>
+          <p>Sach yeh Css nhi style hoti mujh say</p>
+          <p>Sach yeh Css nhi style hoti mujh say</p>
+          <p>Sach yeh Css nhi style hoti mujh say</p>
+          <p>Sach yeh Css nhi style hoti mujh say</p>
+          <ul>
             <li>Color: <span>Black, White</span></li>
             <li>Available: <span>in stock</span></li>
             <li>Category: <span>Airphones</span></li>
-            </ul>
-          </div>
-          
+          </ul>
         </div>
+
       </div>
     </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script copy.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
