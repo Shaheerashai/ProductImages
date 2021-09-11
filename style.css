@@ -135,7 +135,6 @@ body {
 
     .card-wrapper {
         height: 100vh;
-        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -143,25 +142,8 @@ body {
     .product-content {
         padding-top: 0;
     }
-    .swiper {
-        width: 300px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     
-    }
-    .mySwiper img {
-        width: 300px;
-        height: 300px;
     
-    }
-    .mySwiper2 .swiper-slide {
-
-        width: 15%;
-        height: 20%;
-        opacity: 0.5;
-    }
 }
 
 .swiper {
@@ -176,15 +158,13 @@ body {
 
 }
 .mySwiper img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
    
 
 }
 
 .swiper-pagination {
-    position: relative;
-    left: 50%;
     top: 100%;
     opacity: 0.5;
 }
@@ -216,8 +196,52 @@ body {
 }
 .swiper-button-next{
     color: rgb(31, 122, 207);
-    
+    position: absolute;
+   
 }
 .swiper-button-prev{
     color: rgb(31, 122, 207);
+    position: absolute;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        display: grid;
+    }
+
+    .card-wrapper {
+        height: auto;
+        width : auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-content {
+        padding-top: 0;
+    }
+    
+    .swiper {
+        width: 400px;
+        height: 350px;
+       
+    
+    }
+    .mySwiper2 {
+        position: relative;
+        height: 20%;
+        
+    }
+    .mySwiper2 img{
+        
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 3rem;
+    }
+    .mySwiper2 .swiper-slide {
+    
+        width: 15%;
+        height: 20%;
+        opacity: 0.5;
+    }
 }

@@ -3,29 +3,23 @@ var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 7,
     freeMode: true,
     watchSlidesProgress: true,
-  });
-  
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    zoom: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
-    
+    },
+
     thumbs: {
-      swiper: swiper,
+        swiper: swiper,
     },
     pagination: {
-      el: ".swiper-pagination"
+        el: ".swiper-pagination",
+        clickable: true,
     },
-  });
- // function setSize(){
-   // width = window.innerWidth;
-    //console.log(width);
-//}
-  //window.addEventListener('resize', setSize, false);
-
+});
