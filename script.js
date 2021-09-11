@@ -6,13 +6,10 @@ var swiper = new Swiper(".mySwiper2", {
   });
   
   var swiper = new Swiper(".mySwiper", {
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 10,
-      shadowScale: 0.94
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
