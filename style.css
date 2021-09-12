@@ -57,7 +57,8 @@ body {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: #256eff;
+    background: rgb(34,94,195);
+background: linear-gradient(0deg, rgba(34,94,195,1) 0%, rgba(253,107,45,1) 100%);
     color: #fff;
     padding: 0 0.3rem;
     transition: all 0.5s ease;
@@ -77,9 +78,10 @@ body {
 }
 
 .product-price {
-    margin: 1rem 0;
     font-size: 1rem;
     font-weight: 700;
+    height:fit-content;
+    border: 2px solid rgb(0, 255, 98);
 }
 
 .product-price span {
@@ -94,6 +96,39 @@ body {
 .new-price span {
     color: #256eff;
 }
+#countdown {
+    width: 100%;
+    color: #f70a0e;
+    float: left;
+    
+  }
+  
+  #countdown h1 {
+    font-weight: bold !important;
+    font-size: 15px!important;
+    margin-bottom: 2px;
+  }
+  #countdown li {
+    font-size: 10px!important;
+    margin-bottom: 2px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    border: 10px;
+    background: rgb(245,187,11);
+background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%);
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.541);
+  }
+  
+  #countdown li span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
 
 .product-detail h2 {
     text-transform: capitalize;
@@ -143,26 +178,19 @@ body {
     .product-content {
         padding-top: 0;
     }
-    
-    
 }
 
 .swiper {
     width: 500px;
     height: 500px;
-   
-
 }
 .mySwiper .swiper-slide {
     background-position: left;
-   
 
 }
 .mySwiper img {
     width: 100%;
     height: 100%;
-   
-
 }
 
 .swiper-pagination {
