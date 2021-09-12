@@ -19,11 +19,13 @@ body {
 
 .card {
     position: block;
+    
 }
 
 .product-imgs {
     justify-items: center;
     position: relative;
+    
 }
 
 .product-content {
@@ -48,7 +50,7 @@ body {
     bottom: 0;
     height: 4px;
     width: 80px;
-    background: #0c0c0c;
+    background: #12263a;
 }
 
 .product-link {
@@ -58,8 +60,8 @@ body {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: rgb(253,29,29);
-background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98%);
+    background: rgb(253, 29, 29);
+    background: linear-gradient(212deg, rgba(253, 29, 29, 1) 18%, rgba(252, 127, 69, 1) 98%);
     color: #fff;
     padding: 2px;
     transition: all 0.5s ease;
@@ -78,17 +80,24 @@ background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98
     color: #252525;
 }
 
+.product-price {
+    margin: 1rem 0;
+}
+
 .last-price {
     font-weight: bold;
 }
+
 .last-price span {
     font-weight: 40px !important;
     color: #f64749;
     text-decoration: line-through;
 }
+
 .new-price {
     font-weight: bold;
 }
+
 .new-price span {
 
     font-weight: bold;
@@ -166,14 +175,23 @@ background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
+        grid-gap: 1.8rem;
     }
 
     .card-wrapper {
         height: 100vh;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
+    }
+
+    .product-content {
+        margin-top: 5px;
+    }
+
+    .swiper {
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -193,7 +211,7 @@ background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98
 }
 
 .swiper-pagination {
-    top: 100%;
+position: inherit;
     opacity: 0.5;
 }
 
@@ -228,13 +246,10 @@ background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98
 
 .swiper-button-next {
     color: rgb(31, 122, 207);
-    position: absolute;
-
 }
 
 .swiper-button-prev {
     color: rgb(31, 122, 207);
-    position: absolute;
 }
 
 @media screen and (max-width: 425px) {
@@ -253,6 +268,13 @@ background: linear-gradient(212deg, rgba(253,29,29,1) 18%, rgba(252,127,69,1) 98
     .product-content {
         margin-top: 40px;
         padding-top: 15px;
+    }
+
+    .OrderNow {
+        width: 100%;
+        display: block;
+        padding: 5px;
+
     }
 
     .swiper {
