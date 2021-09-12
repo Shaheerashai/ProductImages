@@ -20,7 +20,8 @@ body {
 .card {
     position: block;
 }
-.product-imgs{
+
+.product-imgs {
     justify-items: center;
     position: relative;
 }
@@ -32,12 +33,12 @@ body {
 }
 
 .product-title {
-    font-size: 3rem;
+    font-size: 35px;
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    color: #12263a;
-    margin: 1rem 0;
+    color: #070707;
+    margin: 2px;
 }
 
 .product-title::after {
@@ -47,7 +48,7 @@ body {
     bottom: 0;
     height: 4px;
     width: 80px;
-    background: #12263a;
+    background: #0c0c0c;
 }
 
 .product-link {
@@ -57,10 +58,10 @@ body {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: rgb(34,94,195);
-background: linear-gradient(0deg, rgba(34,94,195,1) 0%, rgba(253,107,45,1) 100%);
+    background: rgb(34, 94, 195);
+    background: linear-gradient(0deg, rgba(34, 94, 195, 1) 0%, rgba(253, 107, 45, 1) 100%);
     color: #fff;
-    padding: 0 0.3rem;
+    padding: 2px;
     transition: all 0.5s ease;
 }
 
@@ -78,21 +79,17 @@ background: linear-gradient(0deg, rgba(34,94,195,1) 0%, rgba(253,107,45,1) 100%)
 }
 
 .product-price {
-    font-size: 1rem;
-    font-weight: 700;
-    height:fit-content;
-    border: 2px solid rgb(0, 255, 98);
+    font-size: 20px;
+    font-weight: 500;
+    height: fit-content;
 }
-
 .product-price span {
     font-weight: 400;
 }
-
 .last-price span {
     color: #f64749;
     text-decoration: line-through;
 }
-
 .new-price span {
     color: #256eff;
 }
@@ -100,35 +97,35 @@ background: linear-gradient(0deg, rgba(34,94,195,1) 0%, rgba(253,107,45,1) 100%)
     width: 100%;
     color: #f70a0e;
     float: left;
-    
-  }
-  
-  #countdown h1 {
+}
+#countdown h1 {
     font-weight: bold !important;
-    font-size: 15px!important;
+    font-size: 20px !important;
     margin-bottom: 2px;
-  }
-  #countdown li {
-    font-size: 10px!important;
+}
+
+#countdown li {
+    font-size: 10px !important;
     margin-bottom: 2px;
     display: inline-block;
     list-style-type: none;
     padding: 5px;
     border: 10px;
-    background: rgb(245,187,11);
-background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%);
+    background: rgb(245, 187, 11);
+    background: linear-gradient(112deg, rgba(245, 187, 11, 1) 1%, rgba(235, 10, 10, 1) 30%);
     color: white;
     border-radius: 3px;
     text-align: center;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.541);
-  }
-  
-  #countdown li span {
+}
+
+#countdown li span {
     display: block;
     font-size: 16px;
     text-align: center;
     color: white;
-  }
+    padding: 2px;
+}
 
 .product-detail h2 {
     text-transform: capitalize;
@@ -175,6 +172,7 @@ background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%
         justify-content: center;
         align-items: center;
     }
+
     .product-content {
         padding-top: 0;
     }
@@ -184,10 +182,12 @@ background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%
     width: 500px;
     height: 500px;
 }
+
 .mySwiper .swiper-slide {
     background-position: left;
 
 }
+
 .mySwiper img {
     width: 100%;
     height: 100%;
@@ -197,22 +197,25 @@ background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%
     top: 100%;
     opacity: 0.5;
 }
+
 .swiper-pagination-bullet-active {
     opacity: 1;
 }
 
- .mySwiper2 {
+.mySwiper2 {
     position: relative;
     height: 20%;
-    
+
 }
-.mySwiper2 img{
-    
+
+.mySwiper2 img {
+
     width: 60px;
     height: 60px;
     object-fit: cover;
     border: 3rem;
 }
+
 .mySwiper2 .swiper-slide {
 
     width: 25%;
@@ -223,12 +226,14 @@ background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%
 .mySwiper2 .swiper-slide-thumb-active {
     opacity: 1;
 }
-.swiper-button-next{
+
+.swiper-button-next {
     color: rgb(31, 122, 207);
     position: absolute;
-   
+
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
     color: rgb(31, 122, 207);
     position: absolute;
 }
@@ -240,35 +245,39 @@ background: linear-gradient(112deg, rgba(245,187,11,1) 1%, rgba(235,10,10,1) 30%
 
     .card-wrapper {
         height: auto;
-        width : auto;
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .product-content {
         padding-top: 0;
     }
-    
+
     .swiper {
         width: 400px;
         height: 350px;
-       
-    
+
+
     }
+
     .mySwiper2 {
         position: relative;
         height: 20%;
-        
+
     }
-    .mySwiper2 img{
-        
+
+    .mySwiper2 img {
+
         width: 50px;
         height: 50px;
         object-fit: cover;
         border: 3rem;
     }
+
     .mySwiper2 .swiper-slide {
-    
+
         width: 15%;
         height: 20%;
         opacity: 0.5;
